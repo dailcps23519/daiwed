@@ -1,0 +1,53 @@
+body {
+    /* tắt margin 8px mặc định */
+    margin: 0;
+}
+.banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    /* chữ nằm giữa thẻ */
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 200px;
+    height: 200px;
+    /* chống méo hình */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav>ul {
+    /* mấy thẻ con trực tiếp chuyển từ sắp xếp dọc sang ngang (luật)*/
+    display: flex;
+    /* bullet là mặc định có sẵn (tròn tròn */
+    /* tắt bullet đi */
+    list-style: none;
+    /* tắt margin-top/margin-bottom 16px mặc định*/
+    margin-top: 0;
+    margin-bottom: 0;
+    /* tắt padding-left mặc định  là 40px*/
+    padding-left: 40px;
+}
+nav>ul>li>a{
+    /* măc định thẻ a có đường gạch dưới */
+    text-decoration: none;
+    /* để chỉ được padding-top và padding-bottom (do thẻ a là inline */
+    padding: 12px 18px;
+    display: inline-block;
+    color: white;
+}
+/* hover là đưa chuột lên thẻ */
+/* cụ thẻ là hover lên thẻ a */
+nav>ul>li>a:hover{
+    background-color: yellow;
+    color: tomato;
+}
+/* Mặc định: chiều cao của con tăng lên thì cha tăng theo */
+nav {
+    background-color: green;
+}
